@@ -21,7 +21,6 @@ Vision-Zerox is a web application that allows users to quickly query an Monad ad
   - ✅ ERC-20–like token balances
   - ✅ ERC-721 / ERC-1155–like NFT holdings
 
----
 
 ### 💰 Token Balance View
 - Shows all ERC-20–like tokens held by the address.
@@ -31,7 +30,6 @@ Vision-Zerox is a web application that allows users to quickly query an Monad ad
   - **Contract address**
   - 🔜 *(Coming Soon)*: **Real-time token value**
 
----
 
 ### 🎨 NFT Gallery View
 - Responsive grid layout showing all NFTs owned by the wallet.
@@ -41,7 +39,6 @@ Vision-Zerox is a web application that allows users to quickly query an Monad ad
   - 📛 **Collection name**
   - 📄 **Contract address**
 
----
 
 ### ⚡ Built for Monad Blockchain
 - Fully optimized for the **Monad ecosystem**
