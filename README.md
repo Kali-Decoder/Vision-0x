@@ -51,3 +51,19 @@ Vision-Zerox is a web application that allows users to quickly query an Monad ad
   - NFT metadata indexing
   - Transaction history
 
+
+## 📦 Installation 
+
+```bash
+git clone https://github.com/Kali-Decoder/Vision-Zerox.git
+npm install
+npm run dev
+```
+## 📦 To Add Any Shadcn Component 
+
+```bash
+npx shadcn-ui init
+npx shadcn-ui add button
+```
+
+
