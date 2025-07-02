@@ -1,16 +1,19 @@
-import { Button } from "@/components/ui/button";
+import Sidebar from "@/components/Sidebar";
+import Navbar from "@/components/Navbar";
+
+import MainSection from "@/components/MainSection";
+import DashboardLayout from "./DashboardLayout";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-         
-          <Button variant="outline" className="mt-4">
-            Monad Address Montion : Vision-Zerox
-          </Button>
-        </div>
-      </main>
-    </div>
+    <DashboardLayout>
+      <div className="flex">
+        <Sidebar />
+        <section id="content">
+          <Navbar />
+          <MainSection />
+        </section>
+      </div>
+    </DashboardLayout>
   );
 }
