@@ -18,7 +18,7 @@ const MainSection = () => {
             <DollarSign className="w-12 h-12" />
             <span className="text">
               <h3>2834</h3>
-              <p>Total NFT's Minted</p>
+              <p>Total NFTs Minted</p>
             </span>
           </li>
           <li>

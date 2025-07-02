@@ -1,5 +1,5 @@
 "use client";
-import { useEffect } from "react";
+import { ReactNode, useEffect } from "react";
 import {
   setActiveMenuItem,
   toggleSidebar,
@@ -8,8 +8,10 @@ import {
   initMenuToggle,
   initDropdownMenus,
 } from "@/utils/uiHandlers";
-
-export default function DashboardLayout({children}:any) {
+interface DashboardLayoutProps {
+    children: ReactNode;
+  }
+export default function DashboardLayout({children}:DashboardLayoutProps) {
   useEffect(() => {
     setActiveMenuItem("#sidebar .side-menu.top li a");
     toggleSidebar("#content nav .bx.bx-menu", "sidebar");

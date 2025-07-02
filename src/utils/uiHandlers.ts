@@ -83,15 +83,7 @@ export const setActiveMenuItem = (selector: string) => {
       notificationMenu?.classList.remove("show");
     });
   
-    window.addEventListener("click", (e) => {
-      if (
-        !e.target?.closest(notificationSelector) &&
-        !e.target?.closest(profileSelector)
-      ) {
-        notificationMenu?.classList.remove("show");
-        profileMenu?.classList.remove("show");
-      }
-    });
+    
   };
   
   export const initDropdownMenus = (menuClass = ".menu") => {
@@ -99,21 +91,5 @@ export const setActiveMenuItem = (selector: string) => {
     menus.forEach((m) => ((m as HTMLElement).style.display = "none"));
   };
   
-  export const toggleMenu = (menuId: string) => {
-    const menu = document.getElementById(menuId);
-    const allMenus = document.querySelectorAll(".menu");
-  
-    allMenus.forEach((m) => {
-      if (m !== menu) (m as HTMLElement).style.display = "none";
-    });
-  
-    if (
-      menu?.style.display === "none" ||
-      menu?.style.display === ""
-    ) {
-      menu.style.display = "block";
-    } else {
-      menu.style.display = "none";
-    }
-  };
+
   
